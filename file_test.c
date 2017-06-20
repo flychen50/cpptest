@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <unistd.h>
 int main(int argc,char** argv){
     FILE *fp = fopen("test.txt","w");
-    fputc(38,fp);
+    fputs("hello world",fp);
     fclose(fp);
 }
